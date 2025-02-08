@@ -1,16 +1,17 @@
-package org.example;
+package com.capgeminitrainingday5;
 
 import java.io.*;
 
 public class LargeFileReader{
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\Shamiksha\\Desktop\\CG-Bridgelabz Training\\WEEK03\\Day05\\src\\main\\java\\com\\capgeminitraining\\day05\\large_text_file.txt";
+        String filePath = "C:\\Users\\Mohan\\Desktop\\CG-Bridgelabz Training\\WEEK03\\Day05\\src\\main\\java\\com\\capgeminitraining\\day05\\large_text_file.txt";
         long fileReaderTime = measureFileReaderTime(filePath);
         long inputStreamReaderTime = measureInputStreamReaderTime(filePath);
         System.out.println("FileReader Time: " + fileReaderTime + " ms");
         System.out.println("InputStreamReader Time: " + inputStreamReaderTime + " ms");
         System.out.println("InputStreamReader is faster than FileReader");
     }
+
 
     private static long measureFileReaderTime(String filePath) {
         long startTime = System.currentTimeMillis();
@@ -22,6 +23,7 @@ public class LargeFileReader{
         }
         return System.currentTimeMillis() - startTime;
     }
+    
 
     private static long measureInputStreamReaderTime(String filePath) {
         long startTime = System.currentTimeMillis();

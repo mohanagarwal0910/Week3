@@ -21,7 +21,6 @@ public class FibonacciComparison {
         }
         return b;
     }
-
     
     public static void main(String[] args) {
         long startTime, endTime;

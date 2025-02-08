@@ -1,4 +1,4 @@
-package org.example;
+package com.capgeminitrainingday5;
 public class FibonacciComparison {
     public static int N = 30;
     // Recursive Fibonacci
@@ -21,6 +21,7 @@ public class FibonacciComparison {
         }
         return b;
     }
+    
     public static void main(String[] args) {
         long startTime, endTime;
         // Recursive Fibonacci

@@ -1,4 +1,4 @@
-package org.example;
+package com.capgeminitrainingday5;
 import java.util.Scanner;
 import java.util.Arrays;
 public class SearchTarget {
@@ -17,6 +17,7 @@ public class SearchTarget {
         totalDuration=endTime-startTime;
         return -1;
     }
+    
     //method to find element using binary search
     public static int binarySearch(int arr[],int target,int start,int end){
         while(start<=end){

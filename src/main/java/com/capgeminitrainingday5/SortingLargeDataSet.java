@@ -1,4 +1,4 @@
-package org.example;
+package com.capgeminitrainingday5;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -21,7 +21,6 @@ public class SortingLargeDataSet {
             if (!swapped) break;
         }
     }
-
     // Merge Sort (O(N log N))
     public static void mergeSort(int[] arr) {
         if (arr.length <= 1) return;

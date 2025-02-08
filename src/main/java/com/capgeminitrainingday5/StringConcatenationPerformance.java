@@ -1,4 +1,4 @@
-package org.example;
+package com.capgeminitrainingday5;
 public class StringConcatenationPerformance {
     public static int N = 1_000_000;
     // Measure execution time for String concatenation
@@ -30,6 +30,7 @@ public class StringConcatenationPerformance {
         }
         return (System.nanoTime() - startTime) / 1_000_000;
     }
+    
     public static void main(String[] args) {
         System.out.println("Concatenating " + N + " strings...");
 
